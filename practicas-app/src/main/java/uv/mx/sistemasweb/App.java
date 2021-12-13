@@ -1,13 +1,12 @@
 package uv.mx.sistemasweb;
 
-/**
- * Hello world!
- *
- */
+import static spark.Spark.*;
+
 public class App 
 {
-    public static void main( String[] args )
-    {
-        System.out.println( "Hello World!" );
+    public class HelloWorld {
+        public static void main(String[] args) {
+            get("/aprobado", (req, res) -> "8");
+        }
     }
 }
